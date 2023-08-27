@@ -16,3 +16,4 @@ use App\Http\Controllers\OrderController;
 
 Route::get('/', [OrderController::class, 'index'])->name('home');
 Route::post('/checkout', [OrderController::class, 'checkout'])->name('checkout');
+Route::post('/midtrans-callback', [OrderController::class, 'callback'])->name('callback');
